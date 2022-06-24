@@ -232,3 +232,59 @@ fun getLength(text: String?): Int {
 }
 ```
 
+### when
+- 当代码逻辑只有两个分支时，一般会使用if/else，而大于两个逻辑分支的情况，会使用when
+- when可以作为程序语句，也可作为表达式，为变量赋值
+- when要求它里面的逻辑分支必须是完整的
+```
+val i: Int = 1
+
+val message = when(i) {
+    1 -> "一"
+    2 -> "二"
+    else -> "i 不是一也不是二" // 如果去掉这行，会报错
+}
+
+print(message)
+```
+
+### 循环迭代while和for
+#### while
+Kotlin while的使用与Java无异
+
+#### for
+- 迭代数组和集合
+  ```
+  val array = arrayOf(1, 2, 3)
+  for (i in array) {
+      println(i)
+  }
+  ```
+- 迭代区间
+```
+val oneToThree = 1..3 // 代表 [1, 3]
+
+for (i in oneToThree) {
+    println(i)
+}
+
+输出结果：
+1
+2
+3
+
+
+// 逆序区间迭代
+/*
+   逆序区间[6,0]     指定步长为2
+          ↓           ↓           */
+for (i in 6 downTo 0 step 2) {
+    println(i)
+}
+
+输出结果：
+6
+4
+2
+0
+```
