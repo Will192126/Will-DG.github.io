@@ -1,3 +1,4 @@
+# Kotlin基础语法
 ## 变量
 ```
 /*
@@ -7,14 +8,17 @@ var price: Int = 100;   /*
      ↑            ↑
    变量名        变量值   */
 ```
+
 ### 可省略分号
 ```
 var price: Int = 100
 ```
+
 ### 支持类型推到
 ```
 var price = 100 // 默认推导类型为： Int
 ```
+
 ### val和var关键字
 - **val**声明的变量，叫**不可变变量**，它的值在初始化后无法再次被修改，相当于Java里面的final变量
 - **var**声明的变量，叫**可变变量**，相当于Java里的普通变量
@@ -22,6 +26,7 @@ var price = 100 // 默认推导类型为： Int
 
 ## 基础类型
 包括常见的数字类型、布尔类型、字符类型，以及前面这些类型组成的数组
+
 ### 一切都是对象
 | Type   | Bit width |     备注 |
 | :----- | :--: | :-: |
@@ -33,7 +38,9 @@ var price = 100 // 默认推导类型为： Int
 | Char |  16  | Kotlin没有char |
 | Byte |  8  | Kotlin没有byte |
 | Boolean |  8  | Kotlin没有boolean |
+
 ### 空安全
+
 ### 数字类型
 - 整形默认会被推导为“Int”类型
 - Long类型需要使用“L”后缀
@@ -41,6 +48,7 @@ var price = 100 // 默认推导类型为： Int
 - Float类型需要使用“F”后缀
 - 使用“0x”来表示十六进制字面量
 - 使用“0b”来表示二进制字面量
+
 #### 类型转换
 Java可以饮食转换数字类型，Kotlin更推崇显示转换。  
 显示转换可以增强代码的可读性，将来更容易维护。
@@ -59,14 +67,17 @@ Java可以饮食转换数字类型，Kotlin更推崇显示转换。
   val i = 100
   val j: Long = i.toLong() // 编译通过
   ```
+
 ### 布尔类型
+
 ### 字符: Char
+
 ### 字符串: String
 ```
 val s = "Hello Kotlin!"
 ```
-#### 字符串模板
 
+#### 字符串模板
 ```
 val name = "Kotlin"
 print("Hello $name!")
@@ -110,6 +121,7 @@ print(s)
   Size is 2
   First element is apple
   ```
+
 ## 函数
 ### 声明
 ```
@@ -122,6 +134,7 @@ fun helloFunction(name: String): String {
    花括号内为：函数体
 */
 ```
+
 ### 单一表达式函数
 函数体只有一行代码，可以直接使用“=”来连接，将其变成一种类似变量赋值的函数形式
 ```
@@ -131,6 +144,7 @@ fun helloFunction(name: String): String = "Hello $name !"
 ```
 fun helloFunction(name: String) = "Hello $name !"
 ```
+
 ### 调用
 - 支持**命名参数**，调用函数的时候传入“形参的名字”
   ```
@@ -180,6 +194,7 @@ fun helloFunction(name: String) = "Hello $name !"
       commentCount = 3285
   )
   ```
+
 ## 流程控制
 ### if
 Kotlin的if，既能作为**程序语句(Statement)**，也可作为**表达式(Expression)**
@@ -205,6 +220,7 @@ print(message)
 输出结果：
 Big
 ```
+
 使用**Elvis表达式**简化空判断
 ```
 /* 
