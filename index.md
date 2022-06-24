@@ -1,2 +1,2 @@
 # Kotlin
-- [Kotlin基础语法](https://github.com/Will192126/dgwill.github.io/edit/main/Kotlin基础语法.md)
+- [Kotlin基础语法](https://will192126.github.io/dgwill.github.io/Kotlin基础语法)
