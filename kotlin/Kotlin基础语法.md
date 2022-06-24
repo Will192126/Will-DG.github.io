@@ -1,4 +1,5 @@
 # Kotlin基础语法
+![image](https://will192126.github.io/dgwill.github.io/imgs/kotlin/Kotlin%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%E6%80%BB%E7%BB%93.png)
 ## 变量
 ```
 /*
