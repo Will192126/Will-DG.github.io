@@ -66,6 +66,7 @@ Java可以饮食转换数字类型，Kotlin更推崇显示转换。
 val s = "Hello Kotlin!"
 ```
 #### 字符串模板
+
 ```
 val name = "Kotlin"
 print("Hello $name!")
@@ -83,6 +84,7 @@ print("Hello ${array.get(1)}!")
 // 输出结果：
 Hello Kotlin!
 ```
+
 #### 原始字符串
 用于存放复杂的多行文本，并且它定义的时候是什么格式，最终打印也会是对应的格式
 ```
@@ -93,6 +95,7 @@ val s = """
 
 print(s)
 ```
+
 ### 数组
 - 使用arrayOf()创建数组，括号中可以传入数组元素用于初始化
 - Kotlin编译器会根据传入的参数进行类型推导
